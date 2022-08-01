@@ -39,8 +39,12 @@ public class App {
 //        AlertsInSelenium.alertTypes(driver);
 
         //IFrame
-        WebDriver driver = BaseClass.iFrameUse();
-        IFrame.useIFrame(driver);
+        //WebDriver driver = BaseClass.iFrameUse();
+        //IFrame.useIFrame(driver);
+
+        //DropDown
+        WebDriver driver = BaseClass.dropDownBase();
+        DropDown.selectFromDropDown(driver);
 
 
 

@@ -50,4 +50,14 @@ public class BaseClass {
         return driver;
     }
 
+    public static WebDriver dropDownBase(){
+        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select");
+        return driver;
+
+    }
+
 }
